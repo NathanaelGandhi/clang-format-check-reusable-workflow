@@ -37,7 +37,7 @@ jobs:
           find . -name "*.[ch]" -exec clang-format -i -style=file {} +
           git diff > $GITHUB_WORKSPACE/style_differences.txt
       - name: Archive Static Analysis Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: style_differences
           path: style_differences.txt
