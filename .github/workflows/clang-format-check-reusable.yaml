@@ -28,7 +28,7 @@ jobs:
         run: |
           apt-get update && apt-get install -y clang-format git
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           path: repo
       - name: Generate format differences
